@@ -10,7 +10,6 @@ public class Auto {
 		this.marca = marca;
 		this.color = color;
 		this.motor = motor;
-
 	}
 	
 	public void imprimirInfo(String marca, String color, double motor) {
@@ -18,7 +17,7 @@ public class Auto {
 	}
 	
 	public void subirPotenciaMotor(double potencia) {
-		
+		this.motor += potencia;		
 	}
 
 	public String getMarca() {

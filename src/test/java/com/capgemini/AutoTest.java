@@ -13,11 +13,18 @@ class AutoTest {
 
 	@Test
 	void testImprimirInfo() {
-		fail("Not yet implemented");
+		Auto miAuto = new Auto("Ferrari", "Amarillo", 3.0);
+		String actual = miAuto.getColor();
+		String expected = new String(actual);
+		assertEquals(expected, miAuto.getColor());
+		System.out.println(expected);
 	}
 
 	@Test
 	void testSubirPotenciaMotor() {
+		Auto miAuto = new Auto("Audi", "Rojo", 1.6);
+		miAuto.subirPotenciaMotor(0.1);
+		double expected = miAuto.getMotor();
 		fail("Not yet implemented");
 	}
 
