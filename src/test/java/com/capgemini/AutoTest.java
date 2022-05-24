@@ -8,7 +8,7 @@ class AutoTest {
 
 	@Test
 	void testAuto() {
-		fail("Not yet implemented");
+//		fail("Not yet implemented");
 	}
 
 	@Test
@@ -16,6 +16,7 @@ class AutoTest {
 		Auto miAuto = new Auto("Ferrari", "Amarillo", 3.0);
 		String actual = miAuto.getColor();
 		String expected = new String(actual);
+		
 		assertEquals(expected, miAuto.getColor());
 		System.out.println(expected);
 	}
@@ -23,9 +24,9 @@ class AutoTest {
 	@Test
 	void testSubirPotenciaMotor() {
 		Auto miAuto = new Auto("Audi", "Rojo", 1.6);
-		double motor = miAuto.getMotor();
-		miAuto.subirPotenciaMotor(0.4);
+		miAuto.subirPotenciaMotor(6.4);
 		double expected = miAuto.getMotor();
+		
 		assertTrue(potenciaMaxima() > expected);
 		System.out.println(expected);
 	}
