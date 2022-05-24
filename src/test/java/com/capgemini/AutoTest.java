@@ -23,9 +23,14 @@ class AutoTest {
 	@Test
 	void testSubirPotenciaMotor() {
 		Auto miAuto = new Auto("Audi", "Rojo", 1.6);
-		miAuto.subirPotenciaMotor(0.1);
+		double motor = miAuto.getMotor();
+		miAuto.subirPotenciaMotor(0.4);
 		double expected = miAuto.getMotor();
-		fail("Not yet implemented");
+		assertTrue(potenciaMaxima() > expected);
+		System.out.println(expected);
 	}
 
+	double potenciaMaxima() {
+		return 3.0;
+	}
 }
